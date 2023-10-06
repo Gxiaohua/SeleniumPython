@@ -1,0 +1,16 @@
+# -*- coding:utf-8 -*-
+[TestUrl]
+imooc_url = 'https://www.imooc.com/'
+baidu_url =  'https://www.baidu.com'
+[HomeElement]
+login_name = xpath>//input[@type = 'text' and @name = 'email']
+login_password = xpath>//input[@type = 'password' and @name = 'password']
+check_box = id>un-login
+do_login = id>dologin
+login_name_error = xpath>//div[@id='nerror' and @class='m-nerror err_email']/div[text()='请输入帐号']
+login_name_format_error = xpath>//div[@id='nerror' and @class='m-nerror err_email']/div[text()='帐号格式错误']
+login_password_error = xpath>//div[@id='nerror' and @class='m-nerror err_password']/div[text()='请输入密码']
+do_login_error = xpath>//div[@id='nerror' and @title='帐号或密码错误']/div[text()='帐号或密码错误']
+login_account_error = xpath>//div[@id='nerror' and @title='该帐号无法使用，请重新注册其他帐号']/div[@class = 'ferrorhead']
+slide_error = xpath>//div[@id='nerror' and @class='m-nerror err_slide']/div[text()='请先进行验证']
+#//*[@id="signup-form"]/div[1]/input
